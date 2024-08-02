@@ -1,0 +1,19 @@
+
+<app-add-task (onAddTask)="addTask($event)"></app-add-task>
+
+<app-task-item
+  *ngFor="let tarefa of tarefas"
+  [item]="tarefa"
+  (onDeleteTask)="deleteTask($event)"
+  (onToggleDone)="toggleDone($event)"></app-task-item>
+  <!--
+  Realizando 'forEach'.
+  A área de Tasks vai ter uma lista de itens,
+  onde cada item vai receber o objeto proveniente da 'tarefas'.
+
+  tipo isso:
+  for (int i = 0 ; i < tarefas.lenght() ; i++)
+    <app-task-item [item] = "tarefas[i]"> </app-task-item>
+-->
+
+

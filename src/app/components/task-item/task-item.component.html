@@ -1,0 +1,20 @@
+<div class="task"
+  (dblclick)="onToggle(item)"
+  [ngClass]="item.concluido ? 'reminder' : 'pending' ">
+
+  <h4>
+    {{ item.tarefa }}
+    <!--
+      Adicionando Icon 'X',
+      junto da diretiva do Angular '[ngStyle]' para alterar a sua cor.
+
+      (click)="(onDelete(item))" -> ao clicar no ícone, chama o método passando o item.
+    -->
+    <fa-icon
+      [icon]="faTimes"
+      [ngStyle]="{'color': 'red'}"
+      (click)="(onDelete(item))">
+    </fa-icon>
+  </h4>
+  <p>{{ item.categoria }}</p>
+</div>
