@@ -1,16 +1,17 @@
 # Aplicação Web para gerenciamento de tarefas
 
-Primeiro Projeto com Angular. 
+Primeiro Projeto com Angular 18.
 
 ## Para rodar
 
-`npm install -g @angular/cli@latest` para baixar as dependências do Angular.
+`npm install` para baixar as dependências necessárias.
 
-`npm install` para confirmar se baixou as dependências necessárias.
-
-`npx json-server db-json` para rodar a API Fake.
+`npx json-server db.json` para rodar a API Fake que será consumida.
 
 `ng serve` para rodar a aplicação.
+
+Obs.: O arquivo `db.json` é a base de dados que contèm as tarefas.
+
 
 ## Aplicação
 
